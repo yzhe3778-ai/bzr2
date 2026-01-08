@@ -1,11 +1,6 @@
 name = "dream-comment-generator"
-compatibility_date = "2024-01-01"
-type = "javascript"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "./dist"
 
-# Serve static files from the built Vite output
-site = { bucket = "./dist" }
-
-# Route API requests to the worker script
-[[routes]]
-pattern = "/api/*"
-script = "worker"
+[vars]
+# Add any public vars here if needed

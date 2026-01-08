@@ -203,7 +203,7 @@ const App: React.FC = () => {
                     >
                       {customBg ? (
                         <div className="relative w-full h-full">
-                          <img src={customBg} className="w-full h-full object-cover" alt="Custom background" />
+                          <img src={customBg} className="w-full h-full object-cover" alt="Custom background" loading="lazy" />
                           <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <i className="fa-solid fa-arrows-rotate text-white text-sm"></i>
                           </div>
@@ -244,7 +244,7 @@ const App: React.FC = () => {
                       className={`shrink-0 w-20 h-20 rounded-2xl border-4 transition-all overflow-hidden ${selectedBgIndex === idx ? `${currentTheme.borderColor} scale-110 shadow-xl` : 'border-white opacity-60 hover:opacity-100'
                         }`}
                     >
-                      <img src={bg} className="w-full h-full object-cover" alt={`Option ${idx}`} />
+                      <img src={bg} className="w-full h-full object-cover" alt={`Option ${idx}`} loading="lazy" />
                     </button>
                   ))}
                 </div>
